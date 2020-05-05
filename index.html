@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My website</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<script src="script.js"></script>
+
+<body>
+    <div id='container'>
+        <div id='header'>
+            <p>My CV</p>
+        </div>
+        <div id="content">
+            <div id="personalstatement">
+                <p>Nazarbayev Intellectual School graduate student who has been studying in English for last 4 years of high school and who is currently gaining tertiary education mostly in English and Korean. Young and ambitious student of Pusan National University with critical thinking and management skills. PNU is the one of the highly ranked university among Korean universities. Current major is mechanical engineering, especially deeply studying control systems. </p>
+                <button onclick="ShowDate()">Show Date</button>
+                <button onclick="ClearDate()">Clear Date</button>
+                <p id="Date"></p>
+            </div>
+            <div id='photo'>
+                <p>Text above the photo</p>
+                <img src="dastan.jpeg" alt="CVphoto">
+                <p>The text under photo.</p>
+                <button onclick="ChangeColor()">ChangeColor</button>
+            </div>
+            <div id='main'>
+                <h2>Key Achievments</h2>
+                <ul>
+                    <li>Nazarbayev Intellectual School graduation GPA 4.8 out of 5.</li>
+                    <li>The 2nd degree diploma in All-Around Moscow Math Olympiad in 2014.</li>
+                    <li>Twice 3rd degree diploma in Kazakhstan National Math Olympiads 2015-2016.</li>
+                    <li>Certificate of Cambridge University Examination: Physics A, Math B, ICT A (2016). </li>
+                    <li>SAT Math 2 800/800</li>
+                </ul>
+            </div>
+            <div id='nav'> 
+                <ul>
+                    <h3>Navigation</h3>
+                    <li><a class="selected" href="#top">Home</a></li>
+                    <li><a href="second_page.html" target="_blank" title="It is second page">Second page</a></li>
+                    <li><a href="#Contacts">Contact us</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3school.com</a></li>
+                    <li><a href="subfolder/page3.html#third" target="_parent" title="bottom header in page">Page in subfolder</a></li>
+                    <li><a href="#login">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="username" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" min="1" max="100">
+            </div>
+            <div>
+                <label for="date">Birthdate</label>
+                <input type="date" name="date" id="date" min="2020-05-01">
+            </div>
+            <div>
+                Favorite food
+                <div>
+                    <label for="banana">Banana</label>
+                    <input type="checkbox" name="banana" id="banana">
+                    <label for="apple">Apple</label>
+                    <input type="checkbox" name="apple" id="apple">
+                </div>
+            </div>
+            <div>
+                Gender
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </div>
+            </div>
+            <div>
+                <label for="Car">Car</label>
+                <select name="Car" id="Car">
+                    <option value="Mers">Mers</option>
+                    <option value="BMW">BMW</option>
+                </select>
+            </div>
+            <div>
+                <label for="bio">bio</label>
+                <textarea id="bio" name="bio"></textarea>
+            </div>
+            <div>
+                <label for="file">File</label>
+                <input type="file" name="file" id="file">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="password" required>
+            </div> 
+                <button type="reset">Reset</button>
+                <button type="submit">Submit </button>
+        </form>
+        <form onsubmit="return Validate()" action="results.html" id="form_id" method="POST" name="myform">
+            <label for="user">Username</label>
+            <input type="text" name="user" id="user">
+            <label for="psw">Password</label>
+            <input type="text" name="psw" id="psw">
+            <button type="submit" id="log_in">Log in</button>
+            <button type="reset" onclick="resett()">Reset</button>
+        </form>
+        <div id="Contacts">
+            <ul>
+                <li>+77075752667</li>
+                <li>zhumazhanov.dastan@gmail.com</li>
+                <li>Bye!</li>
+            </ul>
+        </div>
+        <div id="foot">
+            Copyright &copy; 2020 Dastan
+        </div>
+    </div>
+</body>
+
+</html>

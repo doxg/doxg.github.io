@@ -1,0 +1,142 @@
+26.04.2020 
+
+HTML defines structure and content of website, CSS defines design.
+link tag is used to relate stylesheets or any other linked documents instead of including javascript files. The HTML Link Element <link> specifies relationships between the current document and other documents. Possible uses for this element include defining a relational framework for navigation and linking the document to a style sheet.
+In the CSS, a class selector is a name preceded by a full stop (“.”) and an ID selector is a name preceded by a hash character (“#”).The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one.
+
+Unordered Lists
+An unordered list is simply a list of related items whose order does not matter. Creating an unordered list in HTML is accomplished using the unordered list block-level element, <ul>. Each item within an unordered list is individually marked up using the list item element, <li>.
+Ordered Lists
+The ordered list element, <ol>, works very much like the unordered list element; individual list items are created in the same manner. The main difference between an ordered list and an unordered list is that with an ordered list, the order in which items are presented is important.
+Because the order matters, instead of using a dot as the default list item marker, an ordered list uses numbers.
+
+
+28.04.2020
+
+
+The other two big differences are that padding is included in the click region and background color/image, but not the margin. By default I use margin everywhere, except when I have a border or background and want to increase the space inside that visible box. The biggest difference between padding and margin is that vertical margins auto-collapse, and padding doesn't.
+
+No need for float with absolute positioning
+
+The <a> tag defines a hyperlink, which is used to link from one page to another.
+
+The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+
+By default, links will appear as follows in all browsers:
+
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red
+
+
+
+29.04.2020
+
+Links:  If two html pages are in the same folder then: <a href="page2.html"></a>
+		If two html pages are in different folders, page2.html is in subfolder of page1.html, then <a href="subfolder/page2.html"</a>
+		If two html pages are in different folders, page2.html is in parent folder of page1.html, then <a href=".../page2.html"</a>
+
+
+1. HTML to define the content of web pages
+2. CSS to specify the layout of web pages
+3. JavaScript to program the behavior of web pages
+
+
+The difference between span and div is that a span element is in-line and usually used for a small chunk of HTML inside a line (such as inside a paragraph) whereas a div (division) element is block-line (which is basically equivalent to having a line-break before and after it) and used to group larger chunks of code.
+
+
+The <form> tag is used to create an HTML form for user input.
+The <form> element can contain one or more of the following form elements:
+<input>
+<textarea>
+<button>
+<select>
+<option>
+<optgroup>
+<fieldset>
+<label>
+<output>
+
+
+30.04.2020
+
+A Document object represents the HTML document that is displayed in that window. 
+
+Window object − Top of the hierarchy. It is the outmost element of the object hierarchy.
+Document object − Each HTML document that gets loaded into a window becomes a document object. The document contains the contents of the page.
+Form object − Everything enclosed in the <form>...</form> tags sets the form object.
+Form control elements − The form object contains all the elements defined for that object such as text fields, buttons, radio buttons, and checkboxes.
+
+Finding HTML Elements
+document.getElementById(id)	Find an element by element id
+document.getElementsByTagName(name)	Find elements by tag name
+document.getElementsByClassName(name)	Find elements by class name
+
+Changing HTML Elements
+element.innerHTML =  new html content	Change the inner HTML of an element
+element.attribute = new value	Change the attribute value of an HTML element
+element.style.property = new style	Change the style of an HTML element
+
+Adding and Deleting Elements
+element.setAttribute(attribute, value)	Change the attribute value of an HTML element
+document.createElement(element)	Create an HTML element
+document.removeChild(element)	Remove an HTML element
+document.appendChild(element)	Add an HTML element
+document.replaceChild(new, old)	Replace an HTML element
+document.write(text)	Write into the HTML output stream
+
+
+A Uniform Resource Locator (URL), colloquially termed a web address,[1] is a reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it.
+The URLSearchParams interface defines utility methods to work with the query string of a URL.
+
+The window.location object can be used to get the current page address (URL) and to redirect the browser to a new page.
+window.location.search is search property sets or returns the querystring part of a URL, including the question mark (?). The querystring part is the part of the URL after the question mark (?). This is often used for parameter passing.
+
+
+01.05.2020
+
+Arrow functions were introduced in ES6.
+Arrow functions allow us to write shorter function syntax: 
+	hello = function() {
+  	return "Hello World!";
+	}
+
+With Arrow Function:
+	hello = () => {
+  	return "Hello World!";
+	}
+
+
+The for attribute specifies which form element a label is bound to. <label for="element_id">
+
+In short, the name is the identifier that is sent to the server when you submit the form. Only input tags with a name attribute are submitted to the server. The id is a unique identifier for the browser, clientside, for javascript and such.
+
+
+03.05.2020
+
+document.getElementById("myBtn").disabled = true;
+
+The disabled property sets or returns whether a button is disabled, or not.
+A disabled element is unusable and un-clickable. Disabled elements are usually rendered in gray by default in browsers.
+This property reflects the HTML disabled attribute.
+
+
+
+05.05.2020
+
+The HTML <video> element is used to show a video on a web page.The controls attribute adds video controls, like play, pause, and volume.
+It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads.
+The <source> element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.
+The text between the <video> and </video> tags will only be displayed in browsers that do not support the <video> element.
+
+To start a video automatically use the autoplay attribute:
+Muted autoplay is always allowed.
+Autoplay with sound is allowed if:
+User has interacted with the domain (click, tap, etc.).
+On desktop, the user's Media Engagement Index threshold has been crossed, meaning the user has previously play video with sound.
+On mobile, the user has added the site to his or her home screen. Top frames can delegate autoplay permission to their iframes to allow autoplay with sound.
+
+
+????
+I declared global variable var myVideo = document.getElementById("Video1"); and tried to use it further in functions and it didn't work. However when I used
+separately document.getElementById("Video1") in each functions, it worked.
