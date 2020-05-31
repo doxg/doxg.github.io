@@ -3,127 +3,161 @@
 
 <head>
     <title>My website</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 
-<script src="script.js"></script>
+
+<script src="https://kit.fontawesome.com/5acd7baabf.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
-    <div id='container'>
+    <div class='container'>
         <div id='header'>
-            <p>My CV</p>
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#contents">Contents</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </div>
-        <div id="content">
-            <div id="personalstatement">
-                <p>Nazarbayev Intellectual School graduate student who has been studying in English for last 4 years of high school and who is currently gaining tertiary education mostly in English and Korean. Young and ambitious student of Pusan National University with critical thinking and management skills. PNU is the one of the highly ranked university among Korean universities. Current major is mechanical engineering, especially deeply studying control systems. </p>
-                <button onclick="ShowDate()">Show Date</button>
-                <button onclick="ClearDate()">Clear Date</button>
-                <p id="Date"></p>
+
+        <div class="leftslide">
+
+            <span><strong> We Are One Festival 2016</strong></span>
+            <iframe width="360" height="250" src="https://www.youtube.com/embed/yZrNPXdcvDQ" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <br></br>
+            <span><strong> We Are One Festival 2017</strong></span>
+            <iframe width="360" height="250" src="https://www.youtube.com/embed/qO7SO1KBwfw" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <br></br>
+            <span><strong> Robotics activities</strong></span>
+            <img src="Media/robotics1.jpg" width="360" height="300">
+            <br></br>
+            <span><strong> Judo Competition</strong></span>
+            <img src="Media/Judo_competition.jpg" width="360" height="300">
+
+
+
+        </div>
+        <div class="intro">
+            <div id="personal_statement">
+                <p>Nazarbayev Intellectual School graduate student who has been studying in English for last 4 years of
+                    high school and who is currently gaining tertiary education mostly in English and Korean. Young and
+                    ambitious student of Pusan National University with critical thinking and management skills. PNU is
+                    the one of the highly ranked university among Korean universities. Current major is mechanical
+                    engineering, especially deeply studying control systems.
             </div>
             <div id='photo'>
-                <p>Text above the photo</p>
-                <img src="Media/dastan.jpeg" alt="Avatar" id="First_photo">
-                <p>The text under photo.</p>
-                <button onclick="ChangeColor()">ChangeColor</button>
-            </div>
-            <div id='main'>
-                <h2>Key Achievments</h2>
-                <ul>
-                    <li>Nazarbayev Intellectual School graduation GPA 4.8 out of 5.</li>
-                    <li>The 2nd degree diploma in All-Around Moscow Math Olympiad in 2014.</li>
-                    <li>Twice 3rd degree diploma in Kazakhstan National Math Olympiads 2015-2016.</li>
-                    <li>Certificate of Cambridge University Examination: Physics A, Math B, ICT A (2016). </li>
-                    <li>SAT Math 2 800/800</li>
-                </ul>
-            </div>
-            <div id='nav'> 
-                <ul>
-                    <h3>Navigation</h3>
-                    <li><a class="selected" href="#top">Home</a></li>
-                    <li><a href="second_page.html" target="_blank" title="It is second page">Second page</a></li>
-                    <li><a href="#Contacts">Contact us</a></li>
-                    <li><a href="https://www.w3schools.com/" target="_blank">W3school.com</a></li>
-                    <li><a href="subfolder/page3.html#third" target="_parent" title="bottom header in page">Page in subfolder</a></li>
-                    <li><a href="#login">Login</a></li>
-                </ul>
+                <img src="Media/dastan.jpeg" alt="Avatar" height="300" width="220"><br>
+                <i class="fas fa-phone-square-alt"></i>
+                <span>+77075752667</span><br>
+                <i class="far fa-envelope"></i>
+                <span> zhumazhanov.dastan@gmail.com</span>
+
+
             </div>
         </div>
-        <form action="results.html" method="GET" enctype="multipart/form-data" id="FirstForm">
-            <div>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="username" required>
+        <div class='main'>
+            <div id="Edback">
+                <i class="fas fa-school fa-2x"></i>
+                <span style="font-weight:bold"> Nazarbayev Intellectual School(NIS) 2012-2016</span>
+                <ul>
+                    <li>NIS GPA 4.8/5</li>
+                    <li>2nd degree diploma in All-Around Moscow Math Olympiad 2014.</li>
+                    <li>3rd degree diplomas in Kazakhstan National Math Olympiads 2015-2016.</li>
+                    <li>Certificate of Cambridge University Examination: Physics A, Math B, ICT A (2016). </li>
+                    <li>SAT Math2/Physics - 800/790.</li>
+                </ul>
+                <h3></h3>
+                <i class="fas fa-university fa-2x"></i>
+                <span style="font-weight:bold"> Pusan National University(PNU) 2016-2021</span>
+                <ul>
+                    <li>Bachelor in Mechanical Engineering with GPA of 3.8/4.5</li>
+                    <li>3rd degree diploma at Robotics Competition 2019.</li>
+                </ul>
             </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
+
+            <div id="Experience">
+                <i class="fas fa-briefcase fa-2x"></i>
+                <span style="font-weight:bold"> Work Experience</span>
+                <ul>
+                    <li>Undergraduate Researcher at V-space Lab (Summer 2017).</li>
+                    <li>Undergraduate Researcher at InVehicleNetworking Lab (04.2019 ~ 01.2020).</li>
+                    <li>Teacher of Math and Physics on <a href="https://repetitor.kz/">Repetitor.kz</a> (2019-2020).
+                    </li>
+                    <li>Teacher of English and Korean languages on <a
+                            href="https://www.tutoronline.ru/">Tutoronline.ru</a> (2020 present).</li>
+                </ul>
             </div>
-            <div>
-                <label for="age">Age</label>
-                <input type="number" name="age" id="age" min="1" max="100">
+
+            <div id="Projects">
+                <i class="fas fa-clipboard-list fa-2x"></i>
+                <span style="font-weight: bold;"> Extracurricular Activities</span>
+                <ul>
+                    <li>Leader of kazakh team in Robotics Club.</li>
+                    <li>Member of judo team of PNU.</li>
+                    <li>Twice winner team at "We Are ONE" talent show festival(2016-2017).</li>
+                    <li>Member of PNU-Friends club</li>
+                </ul>
             </div>
-            <div>
-                <label for="date">Birthdate</label>
-                <input type="date" name="date" id="date" min="2020-05-01">
-            </div>
-            <div>
-                Favorite food
-                <div>
-                    <label for="banana">Banana</label>
-                    <input type="checkbox" name="banana" id="banana">
-                    <label for="apple">Apple</label>
-                    <input type="checkbox" name="apple" id="apple">
+
+            <!--Slider-->
+
+            <div class="slideshow-container">
+                <div class="slide first clickable">
+                    <h3>Outside Bath</h3>
+                    <img src="Media/background.jpg" height="250px">
+                    <br></br>
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum repellat saepe, cumque
+                        dolor ullam adipisci rem amet animi quia cupiditate!</span>
+                    <br></br>
+                    <a class="link" href="https://web.facebook.com/?_rdc=1&_rdr"></a>
                 </div>
-            </div>
-            <div>
-                Gender
-                <div>
-                    <label for="male">Male</label>
-                    <input type="radio" name="gender" id="male" value="male">
-                    <label for="female">Female</label>
-                    <input type="radio" name="gender" id="female" value="female">
+                <div class="slide second">
+                    <h3>CAD/CAE projects</h3>
+                    <img src="Media/CAD_CAE.JPG" height="250px">
+                    <br></br>
+                    <span>Junior&Senior year projects regarding
+                        design. Used softwares: PTCreo and Ansys workbench</span>
                 </div>
+                <div class="slide third">
+                    <h3>Sprinkler</h3>
+                    <img src="Media/background1.jpg" height="250px">
+                    <br></br>
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum repellat saepe, cumque
+                        dolor ullam adipisci rem amet animi quia cupiditate!</span>
+
+                </div>
+                <div class="slide fourth">
+                    <h3>Trashbox</h3>
+                    <img src="Media/Trashbox.jpg" height="250px">
+                    <br></br>
+                    <span> Here comes the Automated Trash-Box, which has main function to clear itself. It's personal
+                        trash-bin for every office worker, which throws garbage to main trash containers after it's
+                        fully filled.
+                    </span>
+                </div>
+                <a class="btn" id="next">&#10095;</a>
+                <a class="btn" id="previous">&#10094;</a>
             </div>
-            <div>
-                <label for="Car">Car</label>
-                <select name="Car" id="Car">
-                    <option value="Mers">Mers</option>
-                    <option value="BMW">BMW</option>
-                </select>
-            </div>
-            <div>
-                <label for="bio">bio</label>
-                <textarea id="bio" name="bio"></textarea>
-            </div>
-            <div>
-                <label for="file">File</label>
-                <input type="file" name="file" id="file">
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="password" required>
-            </div> 
-                <button type="reset">Reset</button>
-                <button type="submit">Submit </button>
-        </form>
-        <form onsubmit="return Validate()" action="results.html" id="form_id" method="POST" name="myform">
-            <label for="user">Username</label>
-            <input type="text" name="user" id="user">
-            <label for="psw">Password</label>
-            <input type="text" name="psw" id="psw">
-            <button type="submit" id="log_in">Log in</button>
-            <button type="reset" onclick="resett()">Reset</button>
-        </form>
-        <div id="Contacts">
-            <ul>
-                <li>+77075752667</li>
-                <li>zhumazhanov.dastan@gmail.com</li>
-                <li>Bye!</li>
-            </ul>
+
+
+
+
+
         </div>
         <div id="foot">
-            Copyright &copy; 2020 Dastan
+            Copyright &copy; 2020 Dastan's Resume
+            </p>
         </div>
-    </div>
 </body>
 
 </html>

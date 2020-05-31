@@ -1,0 +1,60 @@
+
+.slideshow-container{
+    box-sizing: border-box;
+    width: 940px;
+    height: 90%;
+    background-color: gray;
+    overflow: hidden;
+    position:relative;
+    
+}
+.slide{
+    text-align: center;
+}
+
+.slide img{
+    width:350px;
+}
+.first{
+    color:rgb(89, 116, 89);
+}
+
+.second{
+    color:red;
+}
+
+.third{
+    color:violet;
+}
+
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    padding: 16px;
+    color: snow;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+#previous{
+position: absolute;
+bottom: 50%;
+left:0;
+}
+
+
+#next{
+position: absolute;
+bottom: 50%;
+right:0;
+}
+
+.btn:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+

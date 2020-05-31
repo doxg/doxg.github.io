@@ -21,7 +21,77 @@
     <video id="Video1" width="740" height ="480" controls>
     <source src="Media/IMG_0178.mp4.MOV" type="video/mp4">
     </video>
+
+    <form action="results.html" method="GET" enctype="multipart/form-data" id="FirstForm">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="username" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="100">
+        </div>
+        <div>
+            <label for="date">Birthdate</label>
+            <input type="date" name="date" id="date" min="2020-05-01">
+        </div>
+        <div>
+            Favorite food
+            <div>
+                <label for="banana">Banana</label>
+                <input type="checkbox" name="banana" id="banana">
+                <label for="apple">Apple</label>
+                <input type="checkbox" name="apple" id="apple">
+            </div>
+        </div>
+        <div>
+            Gender
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+        </div>
+        <div>
+            <label for="Car">Car</label>
+            <select name="Car" id="Car">
+                <option value="Mers">Mers</option>
+                <option value="BMW">BMW</option>
+            </select>
+        </div>
+        <div>
+            <label for="bio">bio</label>
+            <textarea id="bio" name="bio"></textarea>
+        </div>
+        <div>
+            <label for="file">File</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="password" required>
+        </div> 
+            <button type="reset">Reset</button>
+            <button type="submit">Submit </button>
+    </form>
+    <form onsubmit="return Validate()" action="results.html" id="form_id" method="POST" name="myform">
+        <label for="user">Username</label>
+        <input type="text" name="user" id="user">
+        <label for="psw">Password</label>
+        <input type="text" name="psw" id="psw">
+        <button type="submit" id="log_in">Log in</button>
+        <button type="reset" onclick="resett()">Reset</button>
+    </form>
 </div>
+
+<button onclick="ShowDate()">Show Date</button>
+<button onclick="ClearDate()">Clear Date</button>
+<p id="Date"></p>
 </body>
 
 </html>
